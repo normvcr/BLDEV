@@ -2,12 +2,15 @@
 Hierarchical C++ build environment using only Make files and simple utilities.  Includes auto C++ IO source code generation for enums and simple struxts &amp; classes.
 
 ## Introduction
-The BLDEV system offers the software engineer a build environment without any layers between him/her and the Makefiles that control what gets done.  If your source code is a hierarchy of folders, the main tool, *bldev*, constructs a parallel hierarchy of developeent folders where the building takes place.  For any source folder that contains a Makefile.in, the corresponding development folder will contain a Makefile that includes the Makefile.in and various configuration Make files.
+The BLDEV system is a wrapper around bare Makefiles, and manages a hierarchy of source code folders.  BLDEV is not a replacement for the many excellent more fully-featured build system such as autotools, cmake or bazel.  Nonetheless, with BLDEV you may develop sophisticated applications, with different flavours e.g. Debug and Release, being conveniently separated from each other.  BLDEV has been used on Linux and Windows.  Since BLDEV uses only simple C++ utilities, which are part of the BLDEV distribution, and native scripting (Bourne shell on Linux and Command prompt on Windows), it is straight forward to port/extend BLDEV to other platforms.
 
-If BLDEV is not yet installed on your machine, a bootstrap process is used to build *bldev*.  Another utility that is built during the bootstrap process is *setdev*, which is used to create devleopment windows (xterm on Linux, and command prompt on Windows), that makes it convenient to separate different build environments e.g. Debug and Release.  It does this by allowing custom colours for the background and text, and putting a custom title into the development window.  Also, the user may write a script (Shell script on Linux, and Batch file on Windows) that is used to intiialize the run-time of the developement window e.g. to add shared object lcoations to the PATH variable.
-
-## Source code generation
+### Source code generation
 Optionally, the user may install the Clang/LLVM libraries, in order to build the *iogen* utility.  *iogen* parses enums and simple structs &amp; classes to create standard C++ iostream insertion/extraction operators.  This is particularly useful for using structs to hold parameter values.  Another utility, *meconv*, relies on gcc, rather than Clang/LLVN, and converts a set of C++ prerprocessor values into enum values.
 
 ## Documentation
-The **Building.md** file contains details on the bootstrap process.  The **BuildEnvironment.pdf** describes how to use BLDEV.
+The **Building.md** file describes, in detail, how to install BLDEV on a machine which does not yet have the BLDEV utilities.
+
+The document, **BuildEnvironment.pdf** reviews the installation of BLDEV, and goes into detail on the regular usage of BLDEV.
+
+## Source code
+The source code for BLDEV resides on the parent project, normcr/Projects, where the entire Proejects source may be obtained.  Alternatively, the BLDEV-specific source code may be obtained using the script cloneBLDEV, which extracts the needed source files from the Projects repository, making use of the sparse-checkout feature of git.  
