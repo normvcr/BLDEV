@@ -18,4 +18,4 @@ The source code for BLDEV resides on the umbrella repository [Projects](https://
 Alternatively, the BLDEV-specific source code may be obtained using the script checkoutBLDEV, which extracts the needed source files from the Projects repository, making use of the sparse-checkout feature of git. The advantage of this approach, is that proejcts may be cherry-picked, but still reside within a common repository, thus avoiding redundant copies of common source code.
 
 ## License
-BLDEV is distributed under the MIT license, contained in the file, LICENSE.  The folder Attributions contains licenses and acknwledgements for 3rd party code, which, themselves, may have conditions distinct from the BLDEV distribution license.
+BLDEV is distributed under the MIT license.  The folder Attributions contains licenses and acknwledgements for 3rd party code, which, themselves, may have conditions distinct from the BLDEV distribution license.
