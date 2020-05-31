@@ -13,6 +13,9 @@ The **Building.md** file describes, in detail, how to install BLDEV on a machine
 The document, **BuildEnvironment.pdf** reviews the installation of BLDEV, and goes into detail on the regular usage of BLDEV.
 
 ## Source code
-The source code for BLDEV resides on the [parent project](https://github.com/normvcr/Projects), where the entire Proejects source may be obtained.
+The source code for BLDEV resides on the umbrella repository [Projects](https://github.com/normvcr/Projects), where the entire Proejects source may be obtained.
 
-Alternatively, the BLDEV-specific source code may be obtained using the script cloneBLDEV, which extracts the needed source files from the Projects repository, making use of the sparse-checkout feature of git. The advantage of this approach, is that proejcts may be cherry-picked, but still reside within a common repository, thus avoiding redundant copies of common source code.
+Alternatively, the BLDEV-specific source code may be obtained using the script checkoutBLDEV, which extracts the needed source files from the Projects repository, making use of the sparse-checkout feature of git. The advantage of this approach, is that proejcts may be cherry-picked, but still reside within a common repository, thus avoiding redundant copies of common source code.
+
+## License
+BLDEV is distributed under the MIT license, contained in the file, LICENSE.  The folder Attributions contains licenses and acknwledgements for 3rd party code, which, themselves, may have conditions distinct from the BLDEV distribution license.
