@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git sparse-checkout --stdin set <<<QQQ
+git sparse-checkout set --stdin  <<QQQ
 config
 dev/bin
 dev/inc

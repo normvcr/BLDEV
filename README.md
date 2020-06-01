@@ -17,15 +17,20 @@ The source code for BLDEV resides on the umbrella repository [Projects](https://
 
 Alternatively, the BLDEV-specific source code may be obtained, as follows:
 
-1. Add the **--sparse** flag to the
+1. Do this only the first time cloning into the
 [Projects](https://github.com/normvcr/Projects)
-clone command
+repository.
+
+Add **--sparse** to the Projects clone command
 >   git clone --sparse https://github.com/normvcr/Projects.git
 
-2. Restrict sparse checkout to folders (not to cherry-pick files)
+2. Change to the Projects folder
+>   cd Projects
+
+3. Restrict sparse checkout to folders (not to cherry-pick files)
 >   git sparse-checkout init --cone
 
-3. Get the BLDEV source code with the supplied Bourne script
+4. Get the BLDEV source code with the supplied Bourne script
 >   checkoutBLDEV
 
 The advantage of this approach, is that proejcts may separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
