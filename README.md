@@ -26,7 +26,7 @@ clone command
 >   git sparse-checkout init --cone
 
 1. Get the BLDEV source code
-> cat bldevFolddrs.txt | git sparse-checkout --stdin
+>   cat sparseFolders.txt | git sparse-checkout --stdin
 
 The advantage of this approach, is that proejcts may separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
 
