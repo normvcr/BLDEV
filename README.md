@@ -1,5 +1,5 @@
 # BLDEV
-Hierarchical C++ build environment using only Make files and simple utilities.  Includes auto C++ IO source code generation for enums and simple struxts &amp; classes.
+Hierarchical C++ build environment using only Make files and simple utilities.  Includes auto C++ IO source code generation for enums and simple structs &amp; classes.
 
 ## Introduction
 The BLDEV system is a wrapper around bare Makefiles, and manages a hierarchy of source code folders.  BLDEV is not a replacement for the many excellent more fully-featured build system such as autotools, cmake or bazel.  Nonetheless, with BLDEV you may develop sophisticated applications, with different flavours e.g. Debug and Release, being conveniently separated from each other.  BLDEV has been used on Linux and Windows.  Since BLDEV uses only simple C++ utilities, which are part of the BLDEV distribution, and native scripting (Bourne shell on Linux and Command prompt on Windows), it is straight forward to port/extend BLDEV to other platforms.
