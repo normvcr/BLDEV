@@ -22,11 +22,11 @@ Alternatively, the BLDEV-specific source code may be obtained, as follows:
 clone command
 >   git clone --sparse https://github.com/normvcr/Projects.git
 
-1. Restrict sparse checkout to folders (not to cherry-pick files)
+2. Restrict sparse checkout to folders (not to cherry-pick files)
 >   git sparse-checkout init --cone
 
-1. Get the BLDEV source code
->   cat sparseFolders.txt | git sparse-checkout --stdin
+3. Get the BLDEV source code with the supplied Bourne script
+>   checkoutBLDEV
 
 The advantage of this approach, is that proejcts may separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
 
