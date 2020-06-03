@@ -33,7 +33,7 @@ Add **--sparse** to the Projects clone command
 4. Get the BLDEV source code with the supplied Bourne script
 >   checkoutBLDEV
 
-The advantage of this approach, is that proejcts may separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
+The advantage of this approach, is that proejcts may be separately downloaded as convenient, but still reside within a common repository, thus avoiding redundant copies of common source code.
 
 ## License
-BLDEV is distributed under the MIT license.  The folder Attributions contains licenses and acknwledgements for 3rd party code, which, themselves, may have conditions distinct from the BLDEV distribution license.
+BLDEV is distributed under the MIT license.  The folder *Attributions* contains licenses and acknwledgements for 3rd party code, which, themselves, may have conditions distinct from the BLDEV distribution license.
