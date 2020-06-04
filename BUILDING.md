@@ -25,6 +25,13 @@ After completing the bootstrap process, the PLATBIN folder will contain, at the 
 
 **bldev** and **setdev** are the main development utilities.  **setdev_TAG** is a script that creates a development window, and initializes its run-time.  **TAG** is a short string that you choose as the name of the development environment in which you have bootstrapped **BLDEV**.  **setdev_TAG** can also be used for further development.  On Windows, **bldev** and **setdev** have the **.exe** extension, and **setdev_TAG** has the **.bat** extension.  On Linux, **setdev_TAG** is a Bourne shell script.
 
+There are two optional features to consider when installing BLDEV:
+
+- IO source code generation (persistance)
+- Keyboard key code management
+
+Both of these options are controlled by respective Make variables, as explained in section 3 for the Platform.inc configuration file.
+
 ## 1. Prerequisites
 
 Packages to install for both Linux and Windows are:
